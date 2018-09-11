@@ -68,5 +68,7 @@ class Logger(object):
                 self.logger.addHandler(file_handler)
         return self.logger
 
-#testLogger = Logger('MyTestLogger')
-#testLogger.get_logger()
+testLogger = Logger('MyTestLogger').get_logger()
+
+if __name__ == '__main__':
+    testLogger.info("Hello World")
