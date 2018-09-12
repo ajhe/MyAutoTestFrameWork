@@ -39,7 +39,7 @@ def logger_browser(exc=WebDriverException):
                     testLogger.debug('[Call]: {0} >> {1}'.format(_cls_name, _met_name))
                 return result
             except exc as e:
-                exc_type, _, _ = sys.exc.info()
+                exc_type, _, _ = sys.exc_info()
                 testLogger.warning('[{0}]: {1}'.format(exc_type.__name__, e).rstrip())
             except Exception:
                 testLogger.exception('[UnwantedException]:')
