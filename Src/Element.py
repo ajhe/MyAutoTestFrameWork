@@ -18,8 +18,9 @@ class MetaDecorator(type):
                     cls_dict[attr] = logger_element()(val)
         return type.__new__(mcs, cls_name, supers, cls_dict)
 
+__metaclass__ = MetaDecorator
 
-class Element(metaclass=MetaDecorator):
+class Element(object):
     """封装Selenium里的Element操作"""
     def __init__(self, driver, name, locator):
         self.driver = driver
@@ -27,12 +28,12 @@ class Element(metaclass=MetaDecorator):
         self.locator = locator
 
     # 点击操作
-    def click(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+    def click(self, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
         Browser(self.driver)._get_element(self.locator).click()
 
     # 清空文本框
-    def clear(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+    def clear(self, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
         Browser(self.driver)._get_element(self.locator).clear()
 
@@ -55,7 +56,7 @@ class Element(metaclass=MetaDecorator):
     # 获取元素大小
     def get_size(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
-        size = Browser(self.driver)._get_element(self.locator).size
+        size =Browser(self.driver)._get_element(self.locator).size
         return size
 
     # 获取属性值
@@ -72,4 +73,29 @@ class Element(metaclass=MetaDecorator):
             return True
         except (TimeoutException,NoSuchElementException):
             return False
+
+    # 验证元素是否允许用户输入
+    def is_enable(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+        try:
+            Wait(self.driver).element_visible(self.locator, timeout, frequency)
+            Browser(self.driver)._get_element(self.locator).is_enable()
+            return True
+        except (TimeoutException,NoSuchElementException):
+            return False
+
+    # 验证元素是否可选择
+    def is_selected(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+        try:
+            Wait(self.driver).element_visible(self.locator, timeout, frequency)
+            Browser(self.driver)._get_element(self.locator).is_selected()
+            return True
+        except (TimeoutException, NoSuchElementException):
+            return False
+
+    # 定位选择frame
+    def switch_to_frame(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+        result = Wait(self.driver).frame_switchable(self.locator, timeout, frequency)
+        time.sleep(2)
+        return result
+
 

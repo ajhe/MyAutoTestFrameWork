@@ -11,17 +11,19 @@ class ParseConfig(object):
 
     def log_config(self, setting_name):
         try:
-            self.config.get('LogConfig', setting_name)
+            return self.config.get('LogConfig', setting_name)
         except Exception as e:
             testLogger.exception('[Exception]:', exc_info=True)
             raise e
 
     def time_config(self, setting_name):
         try:
-            self.config.get('TimeConfig', setting_name)
+            value = self.config.get('TimeConfig', setting_name)
+            return float(value)
         except Exception as e:
             testLogger.exception('[Exception]:', exc_info=True)
             raise e
+
 
 parseConfig = ParseConfig()
 if __name__ == '__main__':

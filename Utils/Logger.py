@@ -58,7 +58,7 @@ class Logger(object):
                 console_handler.setFormatter(self.formatter)
                 self.logger.addHandler(console_handler)
             if file_switch:
-                #file_handler = logging.FileHandler(self.log_file_name)
+                # file_handler = logging.FileHandler(self.log_file_name)
                 # 下面使用TimedRotatingFileHandler，是带时间回滚的日志形式
                 file_handler = TimedRotatingFileHandler(filename=self.log_file_path, when='D',
                                                         interval=1, backupCount=self.backup_count, delay=True,

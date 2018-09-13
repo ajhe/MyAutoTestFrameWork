@@ -25,27 +25,29 @@ class MetaDecorator(type):
         return type.__new__(mcs, cls_name, supers, cls_dict)
 
 
-class Browser(metaclass=MetaDecorator):
+__metaclass__ = MetaDecorator
+
+class Browser(object):
     """封装selenium的WebDriver类"""
     def __init__(self, driver):
         self.driver = driver
 
-    def _get_element(self, lecator):
+    def _get_element(self, locator):
         """该方法专门给Element封装用的，所以写成私有方法，平时不调用"""
-        return self.driver.find_element(by=lecator[0], value=lecator[1])
+        return self.driver.find_element(by=locator[0], value=locator[1])
 
-    def _get_elements(self, lecator):
+    def _get_elements(self, locator):
         """该方法专门给Element封装用的，所以写成私有方法，平时不调用"""
-        return  self.driver.find_elements(by=lecator[0], value=lecator[1])
+        return self.driver.find_elements(by=locator[0], value=locator[1])
 
     # 定位元素
-    def get_element(self, lecator, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+    def get_element(self, locator, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         """
         通过定位器获取页面元素，每一段时间尝试获取一次，获取成功后返回获取的页面元素，获取失败后抛出 NoSuchElement 异常
         locator: 定位器，包含定位方式和定位表达式的元组，如("id", "username")
         timeout: 超时时间，默认为30秒
         frequency: 获取频率，默认为0.5秒
-        :param lecator:
+        :param locator:
         :param timeout:
         :param frequency:
         :return:
@@ -54,13 +56,13 @@ class Browser(metaclass=MetaDecorator):
         # 而是将find_element方法作为参数传给until。同时method的参数是driver，所以这里lambda表达式接收的参数也是driver。
         # until 也可以使用expected_conditions，EC所有的类都是期望场景，实例方法__call__里接收参数driver。
         element = WebDriverWait(self.driver, timeout, frequency).until(
-            lambda _driver : _driver.find_element(by=lecator[0], value=lecator[1]), str(lecator))
+            lambda _driver: _driver.find_element(by=locator[0], value=locator[1]), str(locator))
         return element
 
     # 定位元素组
-    def get_elements(self, lecator, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+    def get_elements(self, locator, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         elements = WebDriverWait(self.driver, timeout, frequency).until(
-            lambda _driver : _driver.find_element(by=lecator[0], value=lecator[1]), str(lecator))
+            lambda _driver : _driver.find_element(by=locator[0], value=locator[1]), str(locator))
         return elements
 
     # 获取页面源码
@@ -170,19 +172,19 @@ class Browser(metaclass=MetaDecorator):
     def get_cookie(self, cookie_name):
         self.driver.get_cookie(cookie_name)
 
-    #删除cookies
+    # 删除cookies
     def delete_cookies(self):
         self.driver.delete_all_cookies()
 
-    #删除特定cookie
+    # 删除特定cookie
     def delete_cookie(self, name, option_string):
         self.driver.delete_cookie(name, option_string)
 
-    #增加cookie
+    # 增加cookie
     def add_cookie(self, cookie_dict):
         self.driver.add_cookie(cookie_dict)
 
-    #截图
+    # 截图
     def take_screenshot(self, filename):
         now_time = time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()))
         _filename = '{0}_{1}.png'.format(now_time, filename)

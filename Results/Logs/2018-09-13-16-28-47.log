@@ -1,0 +1,1 @@
+[2018-09-13 16:29:00,451][ERROR][Main][<module>]:unsupported operand type(s) for +: 'float' and 'NoneType'

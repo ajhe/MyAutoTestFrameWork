@@ -18,7 +18,9 @@ class MetaDecorator(type):
                     cls_dict[attr] = logger_wait()(val)
         return type.__new__(mcs, cls_name, supers, cls_dict)
 
-class Wait(metaclass=MetaDecorator):
+__metaclass__ = MetaDecorator
+
+class Wait(object):
     """封装selenium的WebDriverWait类"""
     def __init__(self, driver):
         self.driver = driver
@@ -69,8 +71,8 @@ class Wait(metaclass=MetaDecorator):
     # 判断传入的元素是否可点击
     def element_clickable(self, locator, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         result = WebDriverWait(self.driver, timeout, frequency).until(
-            ec.element_to_be_clickable(locator), 'Wait element {0} clickable'.format(locator)
-        )
+            ec.element_to_be_clickable(locator), 'Wait element {0} clickable'.format(locator))
+        #print result
         return result
 
     # 判断传入的元素是否可点击
