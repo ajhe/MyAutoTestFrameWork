@@ -23,14 +23,14 @@ except Exception as e:
     ConsoleLevel = 'INFO'           # 日志输出级别
     FileLevel = 'DEBUG'              # 文件日志输出级别
 
-class Logger(object):
+class Logger:
 
-    def __init__(self, logger):
+    def __init__(self, logger_name=__name__):
         """
         定义构造函数，主要是定义了日志类的一些属性，包括日志名，存放地址，日志格式，输出级别
         :param logger:
         """
-        self.logger = logging.getLogger(logger)
+        self.logger = logging.getLogger(logger_name)
         logging.root.setLevel(logging.NOTSET)
         now_time = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
         self.log_file_name = '{0}.log'.format(now_time)
@@ -68,7 +68,7 @@ class Logger(object):
                 self.logger.addHandler(file_handler)
         return self.logger
 
-testLogger = Logger('MyTestLogger').get_logger()
+testLogger = Logger('testLogger').get_logger()
 
 if __name__ == '__main__':
     testLogger.info("Hello World")

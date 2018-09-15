@@ -6,6 +6,7 @@ from selenium.common.exceptions import TimeoutException
 import sys
 
 
+
 def logger_callar(cls):
     """装饰类，添加日志，记录的调用方法"""
     class Wrapper:
@@ -13,7 +14,8 @@ def logger_callar(cls):
             self.wrapped = cls(*args, **kwargs)
 
         def __getattr__(self, attr):
-            logger.debug('Call: {0} >> {1}'.format(cls.__name__, attr))
+            print testLogger
+            testLogger.debug('Call: {0} >> {1}'.format(cls.__name__, attr))
             method = getattr(self.wrapped, attr)
             return method
     return Wrapper
@@ -91,3 +93,6 @@ def logger_element(exc=WebDriverException):
                 raise
         return on_call
     return wrapper
+
+if __name__ == '__main__':
+    pass

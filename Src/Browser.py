@@ -6,7 +6,8 @@ from Utils.Paths import RESULT_SCREENSHOTS_DIR
 from selenium.webdriver.support.wait import WebDriverWait
 import time
 import os
-
+from Utils.Logger import testLogger
+from selenium import webdriver
 
 WAIT_UNTIL_TIMEOUT = parseConfig.time_config('WaitUntilTimeout')
 WAIT_FREQUENCY = parseConfig.time_config('WaitFrequency')
@@ -27,8 +28,10 @@ class MetaDecorator(type):
 
 __metaclass__ = MetaDecorator
 
+
 class Browser(object):
     """封装selenium的WebDriver类"""
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -84,6 +87,7 @@ class Browser(object):
     # 打开网页
     def navigate_to(self, url):
         self.driver.get(url)
+        #testLogger.info()
 
     # 前进操作
     def forward(self):
@@ -192,5 +196,4 @@ class Browser(object):
             os.makedirs(RESULT_SCREENSHOTS_DIR)
         filepath = os.path.join(RESULT_SCREENSHOTS_DIR, _filename)
         self.driver.get_screenshot_as_file(filepath)
-
 
