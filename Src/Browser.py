@@ -1,6 +1,7 @@
 # coding=utf-8
 
 from Utils.Decorator import logger_browser
+from Utils.Decorator import logger_callar
 from Utils.ParseConfig import parseConfig
 from Utils.Paths import RESULT_SCREENSHOTS_DIR
 from selenium.webdriver.support.wait import WebDriverWait
@@ -12,28 +13,29 @@ from selenium import webdriver
 WAIT_UNTIL_TIMEOUT = parseConfig.time_config('WaitUntilTimeout')
 WAIT_FREQUENCY = parseConfig.time_config('WaitFrequency')
 
+
 class MetaDecorator(type):
     """
     元类自动装饰,一定要注意是否已被装饰过了，如果装饰顺序不对
     就没有效果
     """
-    def __new__(mcs, cls_name, supers, cls_dict):
+    def __init__(cls, cls_name, bases, cls_dict):
         for attr, val in cls_dict.items():
             if val.__class__.__name__ == 'function':
                 # 列表中方法的日志不在这记录的，所以为了避免重复记日志，将其排除
                 if attr not in ['__init__', '_get_element', '_get_elements']:
                     cls_dict[attr] = logger_browser()(val)
-        return type.__new__(mcs, cls_name, supers, cls_dict)
-
-
-__metaclass__ = MetaDecorator
+        type.__init__(cls, cls_name, bases, cls_dict)
 
 
 class Browser(object):
     """封装selenium的WebDriver类"""
+    __metaclass__ = MetaDecorator
+    # 之前元类定义是__new__,返回的是一个对象，所以会报错，现在使用__init__,是初始化一个实例
 
     def __init__(self, driver):
         self.driver = driver
+
 
     def _get_element(self, locator):
         """该方法专门给Element封装用的，所以写成私有方法，平时不调用"""

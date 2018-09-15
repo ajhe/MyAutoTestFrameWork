@@ -9,9 +9,10 @@ from Utils.Logger import testLogger
 
 try:
     print FIREFOX_DRIVER_DIR
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox(executable_path=FIREFOX_DRIVER_DIR)
     browser = Browser(driver)
-    browser.navigate_to("http://www.zhihu.com")
+    print type(browser)
+    browser.navigate_to('https://www.zhihu.com')
     title = browser.get_title()
     print title
 
@@ -28,5 +29,4 @@ except Exception as e:
     testLogger.error(e)
 finally:
     browser.quit()
-
 

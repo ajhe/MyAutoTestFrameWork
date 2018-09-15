@@ -11,12 +11,12 @@ WAIT_UNTIL_NOT_TIMEOUT = parseConfig.time_config('WaitUntilNotTimeout')
 WAIT_FREQUENCY = parseConfig.time_config('WaitFrequency')
 
 class MetaDecorator(type):
-    def __new__(mcs, cls_name, supers, cls_dict):
+    def __init__(cls, cls_name, supers, cls_dict):
         for attr, val in cls_dict.items():
             if val.__class__.__name__ == 'function':
                 if attr not in ['__init__']:
                     cls_dict[attr] = logger_wait()(val)
-        return type.__new__(mcs, cls_name, supers, cls_dict)
+        type.__init__(cls, cls_name, supers, cls_dict)
 
 __metaclass__ = MetaDecorator
 
