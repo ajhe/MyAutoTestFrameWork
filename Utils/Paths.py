@@ -8,6 +8,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))          
 # CONFIG DIR
 CONFIG_DIR = os.path.join(ROOT_DIR, "Config")
 FRAME_CONFIG_FILE_PATH = os.path.join(CONFIG_DIR, 'FrameConfig.ini')
+ELEMENT_LOCATOR_FILE_PATH = os.path.join(CONFIG_DIR, 'ElementLocator.json')
 
 # RESULT DIR
 RESULT_DIR = os.path.join(ROOT_DIR, 'Results')                     #保存结果的文件夹路径

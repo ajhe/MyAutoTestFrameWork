@@ -93,7 +93,7 @@ def my_logger_wait(func):
         try:
             result = func(self, *args, **kwargs)
             _result = True if result else False
-            testLogger.debug('[Call]: Wait >> %s [Return]: %s' %(_met_name, result))
+            testLogger.debug('[Call]: Wait >> %s [Return]: %s' % (_met_name, _result))
             return result
         except TimeoutException as e:
             testLogger.warning('[TimeoutException]: {0}'.format(e).rstrip())
