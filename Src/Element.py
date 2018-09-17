@@ -19,10 +19,14 @@ class MetaDecorator(type):
                     cls_dict[attr] = logger_element()(val)
         type.__init__(cls, cls_name, supers, cls_dict)
 
-__metaclass__ = MetaDecorator
+
 
 class Element(object):
     """封装Selenium里的Element操作"""
+
+    # __metaclass__ = MetaDecorator
+    # 之前元类定义是__new__,返回的是一个对象，所以会报错，现在使用__init__,是初始化一个实例
+
     def __init__(self, driver, name, locator):
         self.driver = driver
         self.name = name

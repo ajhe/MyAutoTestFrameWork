@@ -11,10 +11,10 @@ try:
     print FIREFOX_DRIVER_DIR
     driver = webdriver.Firefox(executable_path=FIREFOX_DRIVER_DIR)
     browser = Browser(driver)
-    print type(browser)
+    # print type(browser)
     browser.navigate_to('https://www.zhihu.com')
     title = browser.get_title()
-    print title
+    # print title                         # 由于编码输出问题，会报异常
 
     locator = ('xpath', "//input[@placeholder='手机号']")
     Element(driver, 'mobilephone_textbox', locator).click()

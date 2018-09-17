@@ -1,7 +1,7 @@
 # coding=utf-8
 
 from Utils.Decorator import logger_browser
-from Utils.Decorator import logger_callar
+from Utils.Decorator import my_logger_browser
 from Utils.ParseConfig import parseConfig
 from Utils.Paths import RESULT_SCREENSHOTS_DIR
 from selenium.webdriver.support.wait import WebDriverWait
@@ -30,7 +30,7 @@ class MetaDecorator(type):
 
 class Browser(object):
     """封装selenium的WebDriver类"""
-    __metaclass__ = MetaDecorator
+    # __metaclass__ = MetaDecorator
     # 之前元类定义是__new__,返回的是一个对象，所以会报错，现在使用__init__,是初始化一个实例
 
     def __init__(self, driver):
@@ -46,6 +46,7 @@ class Browser(object):
         return self.driver.find_elements(by=locator[0], value=locator[1])
 
     # 定位元素
+    @my_logger_browser
     def get_element(self, locator, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         """
         通过定位器获取页面元素，每一段时间尝试获取一次，获取成功后返回获取的页面元素，获取失败后抛出 NoSuchElement 异常
@@ -65,37 +66,46 @@ class Browser(object):
         return element
 
     # 定位元素组
+    @my_logger_browser
     def get_elements(self, locator, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         elements = WebDriverWait(self.driver, timeout, frequency).until(
             lambda _driver : _driver.find_element(by=locator[0], value=locator[1]), str(locator))
         return elements
 
     # 获取页面源码
+    @my_logger_browser
     def get_page_source(self):
         return self.driver.page_source
 
+    @my_logger_browser
     # 获取页面标题title
     def get_title(self):
         return self.driver.title
 
     # 获取当前页面地址URL
+    @my_logger_browser
     def get_url(self):
         return self.driver.current_url
 
     # 获取当前浏览器
+    @my_logger_browser
     def get_driver(self):
         return self.driver
 
     # 打开网页
+    @my_logger_browser
     def navigate_to(self, url):
         self.driver.get(url)
-        #testLogger.info()
+        # logger_browser()()
+        # testLogger.info()
 
     # 前进操作
+    @my_logger_browser
     def forward(self):
         self.driver.forward()
 
     # 后退操作
+    @my_logger_browser
     def back(self):
         self.driver.back()
 
@@ -104,93 +114,114 @@ class Browser(object):
         self.driver.close()
 
     # 刷新页面
+    @my_logger_browser
     def refresh(self):
         self.driver.refresh()
 
     # 关闭浏览器
+    @my_logger_browser
     def quit(self):
         self.driver.quit()
 
     # 返回父frame，适用于多个frame嵌套
+    @my_logger_browser
     def switch_to_parent_frame(self):
         self.driver.switch_to.parent_frame()
         time.sleep(2)
 
     # 返回主frame文档,最上层的frame
+    @my_logger_browser
     def switch_to_default_frame(self):
         self.driver.switch_to.default_content()
         time.sleep(2)
 
     # 获取弹框文字内容
+    @my_logger_browser
     def get_alert_text(self):
         text = self.driver.switch_to.alert.text
         return text
 
     # 接受弹框
+    @my_logger_browser
     def accept_alert(self):
         self.driver.switch_to.alert.accept()
 
     # 取消/关闭弹框
+    @my_logger_browser
     def dismiss_alert(self):
         self.driver.switch_to.alert.dismiss()
 
     # 弹框输入值
+    @my_logger_browser
     def send_alert_keys(self, value):
         self.driver.switch_to.send_keys(value)
 
     # 设置浏览器大小
+    @my_logger_browser
     def set_window_size(self, x, y):
         self.driver.set_window_size(x, y)
 
     # 最大化浏览器
+    @my_logger_browser
     def maximize_window(self):
         self.driver.maximize_window()
 
     # 最小化浏览器
+    @my_logger_browser
     def minimize_window(self):
         self.driver.minimize_window()
 
     # 新开一个浏览器窗口
+    @my_logger_browser
     def new_window(self, url):
         js = 'window.open({0});'.format(url)
         self.driver.execute_script(js)
 
     # 打开选择第一个浏览器标签页窗口
+    @my_logger_browser
     def switch_to_frist_window(self):
         windows = self.driver.window_handles
         self.driver.switch_to.window(windows[0])
 
     # 选择最后一个浏览器标签页窗口
+    @my_logger_browser
     def switch_to_last_window(self):
          windows = self.driver.window_handles
          self.driver.switch_to.window(windows[-1])
 
     # 选择特定的第X个标签页窗口
+    @my_logger_browser
     def switch_to_specific_window(self, window_index):
         windows = self.driver.window_handles
         self.driver.switch_to.window(windows[window_index - 1])
 
     # 获取cookies
+    @my_logger_browser
     def get_cookies(self):
         self.driver.get_cookies()
 
     # 获取特定cookie
+    @my_logger_browser
     def get_cookie(self, cookie_name):
         self.driver.get_cookie(cookie_name)
 
     # 删除cookies
+    @my_logger_browser
     def delete_cookies(self):
         self.driver.delete_all_cookies()
 
     # 删除特定cookie
+    @my_logger_browser
     def delete_cookie(self, name, option_string):
         self.driver.delete_cookie(name, option_string)
 
     # 增加cookie
+    @my_logger_browser
     def add_cookie(self, cookie_dict):
         self.driver.add_cookie(cookie_dict)
 
     # 截图
+    @my_logger_browser
     def take_screenshot(self, filename):
         now_time = time.strftime("%Y%m%d%H%M%S",time.localtime(time.time()))
         _filename = '{0}_{1}.png'.format(now_time, filename)

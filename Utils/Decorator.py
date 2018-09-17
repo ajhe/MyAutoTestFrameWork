@@ -6,7 +6,6 @@ from selenium.common.exceptions import TimeoutException
 import sys
 
 
-
 def logger_callar(cls):
     """装饰类，添加日志，记录的调用方法"""
     class Wrapper:
@@ -14,7 +13,7 @@ def logger_callar(cls):
             self.wrapped = cls(*args, **kwargs)
 
         def __getattr__(self, attr):
-            print testLogger
+            # print testLogger
             testLogger.debug('Call: {0} >> {1}'.format(cls.__name__, attr))
             method = getattr(self.wrapped, attr)
             return method
@@ -49,6 +48,25 @@ def logger_browser(exc=WebDriverException):
             return on_call
     return wrapper
 
+def my_logger_browser(func):
+    def wrapper(self, *args, **kwargs):
+        _met_name = func.__name__
+        try:
+            result = func(self, *args, **kwargs)
+            if result is not None:
+                testLogger.debug('[Call]: Browser >> %s [Return]: %s'% (_met_name, result))
+            else:
+                testLogger.debug('[Call]: Browser >> {0}'.format(_met_name))
+            return result
+        except WebDriverException as e:
+            exc_type, _, _ = sys.exc_info()
+            testLogger.warning('[{0}]: {1}'.format(exc_type.__name__, e).rstrip())
+        except Exception:
+            testLogger.exception('[UnwantedException]:')
+            raise
+    return wrapper
+
+
 def logger_wait(exc=WebDriverException):
     """专门用来装饰Src文件下的Wait类"""
     def wrapper(func):
@@ -69,6 +87,24 @@ def logger_wait(exc=WebDriverException):
         return on_call
     return wrapper
 
+def my_logger_wait(func):
+    def wrapper(self, *args, **kwargs):
+        _met_name = func.__name__
+        try:
+            result = func(self, *args, **kwargs)
+            _result = True if result else False
+            testLogger.debug('[Call]: Wait >> %s [Return]: %s' %(_met_name, result))
+            return result
+        except TimeoutException as e:
+            testLogger.warning('[TimeoutException]: {0}'.format(e).rstrip())
+        except WebDriverException as e:
+            exc_type, _, _ = sys.exc_info()
+            testLogger.error('[{0}]: {1}'.format(exc_type.__name__, e).rstrip())
+            raise
+        except Exception:
+            testLogger.exception('[UnwantedException]:')
+            raise
+    return wrapper
 
 def logger_element(exc=WebDriverException):
     """专门装饰Src文件夹里的Element类"""
@@ -93,6 +129,30 @@ def logger_element(exc=WebDriverException):
                 raise
         return on_call
     return wrapper
+
+'''
+def my_logger_element(func):
+    def wrapper(self, *args, **kwargs):
+        _met_name = func.__name__
+        re = args
+        print re
+        # _ele_name = args[0].name
+        try:
+            result = func(self, *args, **kwargs)
+            if result is not None:
+                testLogger.debug('[Call]: Element >> %s >> %s [Return]: %s' %(_met_name, _ele_name, result))
+            else:
+                testLogger.debug('[Call]: Element >> {0} >> {1}'.format(_met_name, _ele_name))
+        except TimeoutException:
+            testLogger.warning('[TimeoutException]: Fail to locate element {0}'.format(_ele_name))
+        except WebDriverException as e:
+            exc_type, _, _ = sys.exc_info()
+            testLogger.warning('[{0}]: {1}'.format(exc_type.__name__, e).rstrip())
+        except Exception:
+            testLogger.exception('[UnwantedException]:')
+            raise
+    return wrapper
+'''
 
 if __name__ == '__main__':
     pass

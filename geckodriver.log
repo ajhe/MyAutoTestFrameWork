@@ -1,15 +1,13 @@
-1537029449364	geckodriver	INFO	geckodriver 0.19.1
-1537029449386	geckodriver	INFO	Listening on 127.0.0.1:53473
-1537029452440	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mr\\AppData\\Local\\Temp\\rust_mozprofile.4kc1vatfafZI"
-1537029462844	Marionette	INFO	Listening on port 53481
-1537029463072	Marionette	WARN	TLS certificate errors will be ignored for this session
-1537029475902	Marionette	INFO	New connections will no longer be accepted
- line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+1537160361060	geckodriver	INFO	geckodriver 0.19.1
+1537160361075	geckodriver	INFO	Listening on 127.0.0.1:50765
+1537160363821	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Mr\\AppData\\Local\\Temp\\rust_mozprofile.Sbz1rJq3OUFs"
+1537160374273	Marionette	INFO	Listening on port 50773
+1537160375016	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
-1537029283322	Marionette	INFO	Ceased listening
-LIZED) [nsIUrlClassifierDBService.getTables]
-1537027157974	Marionette	INFO	Ceased listening
-cShutdown.jsm:550:9
+JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
+1537160416633	Marionette	INFO	Ceased listening
+e.jsm -> resource://gre/modules/Promise-backend.js:742:11
+observe@resource://gre/modules/AsyncShutdown.jsm:550:9
 addBlocker/moduleBlocker/<@resource://gre/components/nsAsyncShutdown.js:157:15
 Promise@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:390:5
 moduleBlocker@resource://gre/components/nsAsyncShutdown.js:153:29
@@ -20,7 +18,7 @@ observe@resource://gre/modules/AsyncShutdown.jsm:533:17
 
 JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
 JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
-1537007764672	Marionette	INFO	Ceased listening
+1537090234762	Marionette	INFO	Ceased listening
 stening
 e code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
 1536826314235	Marionette	INFO	Ceased listening
