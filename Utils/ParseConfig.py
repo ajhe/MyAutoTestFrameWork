@@ -24,6 +24,18 @@ class ParseConfig(object):
             testLogger.exception('[Exception]:', exc_info=True)
             raise e
 
+    def screenshot_config(self, setting_name):
+        try:
+            result = self.config.get('ScreenShotConfig', setting_name)
+            if result == 'True':
+                return True
+            else:
+                return False
+        except Exception as e:
+            testLogger.exception('[Exception]:', exc_info=True)
+            raise
+
+
 
 parseConfig = ParseConfig()
 if __name__ == '__main__':

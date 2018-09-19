@@ -1,0 +1,19 @@
+[2018-09-19 23:48:59,210][WARNING][Decorator][wrapper]:[WebDriverException]: Message: Failed to decode response from marionette
+[2018-09-19 23:48:59,213][INFO][Test_SubPageTile][setUp]:****************************************test_articles_title*****************************************
+[2018-09-19 23:48:59,346][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:48:59,348][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:48:59,368][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:48:59,369][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:48:59,392][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:48:59,394][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:48:59,394][DEBUG][Decorator][wrapper]:[Assert]: assertTrue >> (False,)
+[2018-09-19 23:48:59,414][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:48:59,415][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:49:01,437][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:49:01,438][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:49:01,440][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uuuuuu')
+[2018-09-19 23:49:01,454][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-19 23:49:01,456][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> False is not true, AssertionError: None != 'uuuuuu'
+[2018-09-19 23:49:01,460][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-19 23:49:01,484][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection

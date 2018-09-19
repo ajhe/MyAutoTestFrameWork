@@ -49,6 +49,96 @@ class PUnittest(unittest.TestCase):
     def assertDictContainsSubset(self, expected, actual, msg=None):
         super(PUnittest, self).assertDictContainsSubset(expected, actual, msg=msg)
 
+    # 判断字典1和字典2是否一致
+    @my_unittest_assertion
+    def assertDictEqual(self, d1, d2, msg=None):
+        super(PUnittest, self).assertDictEqual(d1, d2, msg=msg)
+
+    # 判断member是否在container里面
+    @my_unittest_assertion
+    def assertIn(self, member, container, msg=None):
+        super(PUnittest, self).assertIn(member, container, msg=msg)
+
+    # 判断member是否不在container里面
+    @my_unittest_assertion
+    def assertNotIn(self, member, container, msg=None):
+        super(PUnittest, self).assertNotIn(member, container, msg=msg)
+
+    # 判断expr1是不是expr2
+    @my_unittest_assertion
+    def assertIs(self, expr1, expr2, msg=None):
+        super(PUnittest, self).assertIs(expr1, expr2, msg=msg)
+
+    # 判断expr1是不是不是expr2
+    @my_unittest_assertion
+    def assertIsNot(self, expr1, expr2, msg=None):
+        super(PUnittest, self).assertIsNot(expr1, expr2, msg=msg)
+
+    # 判断是否为空（None）
+    def assertIsNone(self, obj, msg=None):
+        super(PUnittest, self).assertIsNone(obj, msg=msg)
+
+    # 判断是否不为空
+    @my_unittest_assertion
+    def assertIsNotNone(self, obj, msg=None):
+        super(PUnittest, self).assertIsNotNone(obj, msg=msg)
+
+    # 判断obj是否为cls的实例
+    @my_unittest_assertion
+    def assertIsInstance(self, obj, cls, msg=None):
+        super(PUnittest, self).assertIsInstance(obj, cls, msg=msg)
+
+    # 判断obj是否不是cls的实例
+    @my_unittest_assertion
+    def assertNotIsInstance(self, obj, cls, msg=None):
+        super(PUnittest, self).assertNotIsInstance(obj, cls, msg=msg)
+
+    # 判断 a 是否大于 b
+    @my_unittest_assertion
+    def assertGreater(self, a, b, msg=None):
+        super(PUnittest, self).assertGreater(a, b, msg=msg)
+        
+    # 判断a 是否小于 b
+    @my_unittest_assertion
+    def assertLess(self, a, b, msg=None):
+        super(PUnittest, self).assertLess(a, b, msg=msg)
+    
+    # 判断a 是否大于等于 b
+    @my_unittest_assertion
+    def assertGreaterEqual(self, a, b, msg=None):
+        super(PUnittest, self).assertGreaterEqual(a, b, msg=msg)
+        
+    # 判断a 是否小于等于b
+    @my_unittest_assertion
+    def assertLessEqual(self, a, b, msg=None):
+        super(PUnittest, self).assertLessEqual(a, b, msg=msg)
+
+
+
+
+
+if __name__ == '__main__':
+
+    class TestPUnittest(PUnittest):
+
+        def test_equal(self):
+            self.assertEqual(1,2)
+            self.assertEqual(1,1)
+            self.assertEqual('s','s')
+            self.assertAlmostEqual(9,2)
+            self.raise_exc()
+
+        def test_in(self):
+            self.assertIn(1,[2])
+            self.assertIn(1,[1,2,'1'])
+            self.assertIn(1,['1'])
+            self.assertIs(1,1)
+            self.raise_exc()
+
+
+    unittest.main()
+
+
 
 
 

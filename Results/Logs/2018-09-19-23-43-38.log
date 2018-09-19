@@ -1,0 +1,19 @@
+[2018-09-19 23:43:54,789][WARNING][Decorator][wrapper]:[WebDriverException]: Message: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.utest.com1/&c=UTF-8&f=regular&d=Firefox%20%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0%E5%9C%A8%20www.utest.com1%20%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%82
+[2018-09-19 23:43:54,792][INFO][Test_SubPageTile][setUp]:****************************************test_articles_title*****************************************
+[2018-09-19 23:44:00,042][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'css selector', u'.nav-menu-open') visible
+[2018-09-19 23:44:00,055][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: False
+[2018-09-19 23:44:05,167][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'hamburger') clickable
+[2018-09-19 23:44:05,210][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .hamburger
+[2018-09-19 23:44:10,388][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") visible
+[2018-09-19 23:44:10,404][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-19 23:44:10,405][DEBUG][Decorator][wrapper]:[Assert]: assertTrue >> (False,)
+[2018-09-19 23:44:15,553][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") clickable
+[2018-09-19 23:44:15,594][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-19 23:44:22,743][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'section-title') visible
+[2018-09-19 23:44:22,769][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .section-title
+[2018-09-19 23:44:22,769][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uuuuuu')
+[2018-09-19 23:44:22,862][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-19 23:44:22,864][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> False is not true, AssertionError: None != 'uuuuuu'
+[2018-09-19 23:44:22,868][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-19 23:44:23,328][DEBUG][Decorator][wrapper]:[Call]: Browser >> quit

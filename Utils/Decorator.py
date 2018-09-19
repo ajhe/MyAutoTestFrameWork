@@ -1,10 +1,12 @@
 # coding=utf-8
 
 from Utils.Logger import testLogger
+from Utils.ParseConfig import parseConfig
 from selenium.common.exceptions import WebDriverException
 from selenium.common.exceptions import TimeoutException
 import sys
 
+SCREENSHOT_SWICTH = parseConfig.screenshot_config('ScreenShotSwitch')
 
 def logger_callar(cls):
     """装饰类，添加日志，记录的调用方法"""
@@ -156,13 +158,40 @@ def my_logger_element(func):
     return wrapper
 
 def my_unittest_assertion(func):
+    """装饰断言类函数"""
     def wrapper(self, *args, **kwargs):
         try:
-            testLogger.debug('[Assert]: {0} >> {1}'.format(func.__name__, format(args[1:])))
+            testLogger.debug('[Assert]: {0} >> {1}'.format(func.__name__, format(args[:])))
             return func(self, *args, **kwargs)
         except AssertionError as e:
             self.Exc_Stack.append(e)
     return wrapper
+
+def my_testcase(func, screen_shot = SCREENSHOT_SWICTH):
+    def wrapper(self, *args, **kwargs):
+        _testcase_name = self._testMethodName
+        _testclass_name = self.__class__.__name__
+        _browser = None
+        for attr in dir(self):
+            if hasattr(getattr(self, attr), 'browser'):
+                _browser = getattr(getattr(self, attr), 'browser')
+                break
+        try:
+            result = func(self, *args, **kwargs)
+            self.raise_exc()
+            testLogger.info('[TestSuccess]: {0} >> {1}'.format(_testclass_name, _testcase_name))
+            return result
+        except Exception:
+            if screen_shot:
+                _filename = 'Error' + _testcase_name
+                _browser.take_screenshot(_filename)
+            exc_type,exc_msg,_ = sys.exc_info()
+            testLogger.error('[TestFail]: {0} >> {1}'.format(exc_type.__name__, exc_msg))
+            raise
+    return wrapper
+
+
+
 
 if __name__ == '__main__':
     pass
