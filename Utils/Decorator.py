@@ -130,19 +130,20 @@ def logger_element(exc=WebDriverException):
         return on_call
     return wrapper
 
-'''
+
 def my_logger_element(func):
     def wrapper(self, *args, **kwargs):
         _met_name = func.__name__
-        re = args
-        print re
-        # _ele_name = args[0].name
+        # re = args
+        # print re
+        _ele_name = self.name
         try:
             result = func(self, *args, **kwargs)
             if result is not None:
                 testLogger.debug('[Call]: Element >> %s >> %s [Return]: %s' %(_met_name, _ele_name, result))
             else:
                 testLogger.debug('[Call]: Element >> {0} >> {1}'.format(_met_name, _ele_name))
+            return result
         except TimeoutException:
             testLogger.warning('[TimeoutException]: Fail to locate element {0}'.format(_ele_name))
         except WebDriverException as e:
@@ -152,7 +153,7 @@ def my_logger_element(func):
             testLogger.exception('[UnwantedException]:')
             raise
     return wrapper
-'''
+
 
 if __name__ == '__main__':
     pass

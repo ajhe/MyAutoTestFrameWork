@@ -1,0 +1,82 @@
+[2018-09-19 17:31:09,515][DEBUG][Decorator][wrapper]:[Call]: Browser >> navigate_to
+[2018-09-19 17:31:09,596][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:31:09,615][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-19 17:31:09,648][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 17:31:09,894][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> HomePage.expand_navigate_button
+[2018-09-19 17:31:09,964][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 17:31:10,194][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.articles_button
+[2018-09-19 17:31:12,249][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:41:08,211][ERROR][Decorator][wrapper]:[UnwantedException]:
+Traceback (most recent call last):
+  File "E:\MyAutoTestFrameWork\Utils\Decorator.py", line 94, in wrapper
+    result = func(self, *args, **kwargs)
+  File "E:\MyAutoTestFrameWork\Src\Wait.py", line 102, in element_visible
+    ec.visibility_of_element_located(locator), 'Wait element {0} visible'.format(locator)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\support\expected_conditions.py", line 127, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\support\expected_conditions.py", line 397, in _find_element
+    return driver.find_element(*by)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 310, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 466, in execute
+    return self._request(command_info[0], url, body=data)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 489, in _request
+    self._conn.request(method, parsed_url.path, body, headers)
+  File "D:\Python27\lib\httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Python27\lib\httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "D:\Python27\lib\httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "D:\Python27\lib\httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "D:\Python27\lib\httplib.py", line 791, in send
+    self.connect()
+  File "D:\Python27\lib\httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "D:\Python27\lib\socket.py", line 571, in create_connection
+    raise err
+error: [Errno 10061] 
+[2018-09-19 17:41:08,253][ERROR][Decorator][wrapper]:[UnwantedException]:
+Traceback (most recent call last):
+  File "E:\MyAutoTestFrameWork\Utils\Decorator.py", line 141, in wrapper
+    result = func(self, *args, **kwargs)
+  File "E:\MyAutoTestFrameWork\Src\Element.py", line 83, in is_displayed
+    def is_displayed(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
+  File "E:\MyAutoTestFrameWork\Utils\Decorator.py", line 94, in wrapper
+    result = func(self, *args, **kwargs)
+  File "E:\MyAutoTestFrameWork\Src\Wait.py", line 102, in element_visible
+    ec.visibility_of_element_located(locator), 'Wait element {0} visible'.format(locator)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\support\expected_conditions.py", line 127, in __call__
+    return _element_if_visible(_find_element(driver, self.locator))
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\support\expected_conditions.py", line 397, in _find_element
+    return driver.find_element(*by)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 310, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 466, in execute
+    return self._request(command_info[0], url, body=data)
+  File "D:\Python27\lib\site-packages\selenium-3.9.0-py2.7.egg\selenium\webdriver\remote\remote_connection.py", line 489, in _request
+    self._conn.request(method, parsed_url.path, body, headers)
+  File "D:\Python27\lib\httplib.py", line 973, in request
+    self._send_request(method, url, body, headers)
+  File "D:\Python27\lib\httplib.py", line 1007, in _send_request
+    self.endheaders(body)
+  File "D:\Python27\lib\httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "D:\Python27\lib\httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "D:\Python27\lib\httplib.py", line 791, in send
+    self.connect()
+  File "D:\Python27\lib\httplib.py", line 772, in connect
+    self.timeout, self.source_address)
+  File "D:\Python27\lib\socket.py", line 571, in create_connection
+    raise err
+error: [Errno 10061] 

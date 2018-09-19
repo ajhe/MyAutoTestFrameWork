@@ -1,0 +1,32 @@
+[2018-09-19 17:37:06,048][DEBUG][Decorator][wrapper]:[Call]: Browser >> navigate_to
+[2018-09-19 17:37:06,135][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:06,161][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-19 17:37:06,207][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 17:37:06,438][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.articles_button
+[2018-09-19 17:37:08,489][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:21,131][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Articles
+[2018-09-19 17:37:23,648][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:23,667][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-19 17:37:23,697][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 17:37:23,924][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.forums_button
+[2018-09-19 17:37:26,796][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:33,545][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Forums
+[2018-09-19 17:37:33,578][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:33,595][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-19 17:37:33,627][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 17:37:33,851][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.training_button
+[2018-09-19 17:37:36,016][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:36,036][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Courses
+[2018-09-19 17:37:36,062][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:36,084][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-19 17:37:36,118][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 17:37:36,351][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-19 17:37:38,515][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:38,686][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Project Board
+[2018-09-19 17:37:38,851][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:39,016][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-19 17:37:39,269][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 17:37:39,651][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.tools_button
+[2018-09-19 17:37:41,683][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 17:37:41,706][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Tool Reviews
+[2018-09-19 17:37:42,165][DEBUG][Decorator][wrapper]:[Call]: Browser >> quit

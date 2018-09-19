@@ -3,6 +3,7 @@
 from Src.Browser import Browser
 from Src.Wait import Wait
 from Utils.Decorator import logger_element
+from Utils.Decorator import my_logger_element
 from Utils.ParseConfig import parseConfig
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import time
@@ -33,44 +34,52 @@ class Element(object):
         self.locator = locator
 
     # 点击操作
+    @my_logger_element
     def click(self, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
         Browser(self.driver)._get_element(self.locator).click()
 
     # 清空文本框
+    @my_logger_element
     def clear(self, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
         Browser(self.driver)._get_element(self.locator).clear()
 
     # 输入文字内容
+    @my_logger_element
     def send_keys(self, value, timeout= WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
         Browser(self.driver)._get_element(self.locator).send_keys(value)
 
     # 提交
+    @my_logger_element
     def submit(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
         Browser(self.driver)._get_element(self.locator).submit()
 
     # 获取文本框内容
+    @my_logger_element
     def get_text(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         Wait(self.driver).element_visible(self.locator, timeout, frequency)
         text = Browser(self.driver)._get_element(self.locator).text
         return text
 
     # 获取元素大小
+    @my_logger_element
     def get_size(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         Wait(self.driver).element_clickable(self.locator, timeout, frequency)
         size =Browser(self.driver)._get_element(self.locator).size
         return size
 
     # 获取属性值
+    @my_logger_element
     def get_attribute(self, attribute, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         Wait(self.driver).element_present(self.locator, timeout, frequency)
         value = Browser(self.driver)._get_element(self.locator).get_attribute(attribute)
         return value
 
     # 判断是否可见
+    @my_logger_element
     def is_displayed(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         try:
             Wait(self.driver).element_visible(self.locator, timeout, frequency)
@@ -80,6 +89,7 @@ class Element(object):
             return False
 
     # 验证元素是否允许用户输入
+    @my_logger_element
     def is_enable(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         try:
             Wait(self.driver).element_visible(self.locator, timeout, frequency)
@@ -89,6 +99,7 @@ class Element(object):
             return False
 
     # 验证元素是否可选择
+    @my_logger_element
     def is_selected(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         try:
             Wait(self.driver).element_visible(self.locator, timeout, frequency)
@@ -98,6 +109,7 @@ class Element(object):
             return False
 
     # 定位选择frame
+    @my_logger_element
     def switch_to_frame(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         result = Wait(self.driver).frame_switchable(self.locator, timeout, frequency)
         time.sleep(2)

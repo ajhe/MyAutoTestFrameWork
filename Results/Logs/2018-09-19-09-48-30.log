@@ -1,4 +1,0 @@
-[2018-09-19 09:50:41,575][DEBUG][Decorator][wrapper]:[Call]: Browser >> navigate_to
-[2018-09-19 09:50:41,673][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
-[2018-09-19 09:50:41,740][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
-[2018-09-19 09:50:44,009][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
