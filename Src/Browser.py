@@ -5,6 +5,7 @@ from Utils.Decorator import my_logger_browser
 from Utils.ParseConfig import parseConfig
 from Utils.Paths import RESULT_SCREENSHOTS_DIR
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
 import time
 import os
 from Utils.Logger import testLogger
@@ -39,7 +40,8 @@ class Browser(object):
 
     def _get_element(self, locator):
         """该方法专门给Element封装用的，所以写成私有方法，平时不调用"""
-        return self.driver.find_element(by=locator[0], value=locator[1])
+        element = self.driver.find_element(by=locator[0], value=locator[1])
+        return element
 
     def _get_elements(self, locator):
         """该方法专门给Element封装用的，所以写成私有方法，平时不调用"""

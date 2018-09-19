@@ -55,7 +55,7 @@ class Element(object):
     # 获取文本框内容
     def get_text(self, timeout=WAIT_UNTIL_TIMEOUT, frequency= WAIT_FREQUENCY):
         Wait(self.driver).element_visible(self.locator, timeout, frequency)
-        text = Browser(self.driver)._get_elements(self.locator).text
+        text = Browser(self.driver)._get_element(self.locator).text
         return text
 
     # 获取元素大小
@@ -102,5 +102,37 @@ class Element(object):
         result = Wait(self.driver).frame_switchable(self.locator, timeout, frequency)
         time.sleep(2)
         return result
+
+
+class Elements(object):
+
+    def __init__(self, driver, name, locator):
+        self.driver = driver
+        self.name = name
+        self.locator =locator
+
+    def is_displayed(self, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
+        try:
+            Wait(self.driver).element_visible(self.locator, timeout, WAIT_FREQUENCY)
+            Browser(self.driver)._get_elements(self.locator).is_displayed()
+            return True
+        except(TimeoutException, NoSuchElementException):
+            return False
+
+    def is_enabled(self, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
+        try:
+            Wait(self.driver).element_visible(self.locator, timeout, frequency)
+            Browser(self.driver)._get_elements(self.locator).is_enabled()
+            return True
+        except (TimeoutException, NoSuchElementException):
+            return False
+
+    def is_selected(self, timeout=WAIT_UNTIL_TIMEOUT, frequency=WAIT_FREQUENCY):
+        try:
+            Wait(self.driver).element_visible(self.locator, timeout, frequency)
+            Browser(self.driver)._get_elements(self.locator).is_selected()
+            return True
+        except(TimeoutException, NoSuchElementException):
+            return False
 
 

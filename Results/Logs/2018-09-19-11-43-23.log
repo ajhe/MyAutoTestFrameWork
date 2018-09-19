@@ -1,0 +1,17 @@
+[2018-09-19 11:44:01,520][DEBUG][Decorator][wrapper]:[Call]: Browser >> navigate_to
+[2018-09-19 11:44:01,631][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:01,706][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 11:44:03,980][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:04,026][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:04,088][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 11:44:07,378][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:07,726][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:08,061][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 11:44:10,546][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:10,868][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:10,970][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 11:44:13,418][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:13,750][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:14,171][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-19 11:44:16,740][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-19 11:44:17,476][DEBUG][Decorator][wrapper]:[Call]: Browser >> quit

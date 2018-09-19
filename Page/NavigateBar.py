@@ -34,3 +34,15 @@ class NavigateBar(BasePage):
 
     def articles_button(self, get_locator=False):
         return self._define_element(get_locator=get_locator)
+
+    def training_button(self, get_locator=False):
+        return self._define_element(get_locator=get_locator)
+
+    def forums_button(self, get_locator=False):
+        return self._define_element(get_locator=get_locator)
+
+    def tools_button(self, get_locator=False):
+        return self._define_element(get_locator=get_locator)
+
+    def projects_button(self, get_locator=False):
+        return self._define_element(get_locator=get_locator)

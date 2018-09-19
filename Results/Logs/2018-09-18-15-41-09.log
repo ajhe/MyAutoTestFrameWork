@@ -1,0 +1,2 @@
+[2018-09-18 15:42:00,181][WARNING][Decorator][wrapper]:[WebDriverException]: Message: Failed to decode response from marionette
+[2018-09-18 15:42:00,223][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
