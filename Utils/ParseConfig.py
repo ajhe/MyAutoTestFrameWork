@@ -45,9 +45,24 @@ class ParseConfig(object):
             else:
                 return True
         except Exception as e:
-            testLogger.exception('[Exception]:', exc_info=True)
+            testLogger.exception('[Exception]: ', exc_info=True)
             raise e
 
+    def browser_type_config(self):
+        try:
+            value = self.config.get('BrowserEngine', 'BrowserType')
+            return value
+        except Exception as e:
+            testLogger.exception('[Exception]: ', exc_info=True)
+            raise e
+
+    def browser_window_size(self):
+        try:
+            value = self.config.get('BrowserEngine', 'WindowSize')
+            return value
+        except Exception as e:
+            testLogger.exception('[Exception]: ', exc_info=True)
+            raise e
 
 
 parseConfig = ParseConfig()

@@ -1,0 +1,3 @@
+[2018-09-20 23:25:15,828][INFO][BrowserEngine][launch_local_browser]:Launch Firefox browser
+[2018-09-20 23:25:15,828][INFO][BrowserEngine][launch_local_browser]:Set implicitly wait time to 30.0
+[2018-09-20 23:25:20,844][INFO][BrowserEngine][quit_browser]:Quit browser and release current driver

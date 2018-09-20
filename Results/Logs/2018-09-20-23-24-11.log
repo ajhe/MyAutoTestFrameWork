@@ -1,0 +1,7 @@
+[2018-09-20 23:24:30,450][INFO][BrowserEngine][launch_local_browser]:Launch Firefox browser
+[2018-09-20 23:24:30,451][INFO][BrowserEngine][launch_local_browser]:Set implicitly wait time to 30.0
+[2018-09-20 23:24:30,451][ERROR][BrowserEngine][launch_local_browser]:Fail to launch browser
+Traceback (most recent call last):
+  File "D:/Program Files (x86)/JetBrains/MyAutoTestFrameWork/Src/BrowserEngine.py", line 46, in launch_local_browser
+    self.driver.implicitly_wait()
+TypeError: implicitly_wait() takes exactly 2 arguments (1 given)

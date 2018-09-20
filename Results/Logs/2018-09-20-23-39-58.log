@@ -1,0 +1,11 @@
+[2018-09-20 23:39:58,943][INFO][BrowserEngine][get_driver]:Get current driver, ID: 506032968, Driver: None
+[2018-09-20 23:40:14,825][INFO][BrowserEngine][launch_local_browser]:Launch Firefox browser
+[2018-09-20 23:40:14,825][INFO][BrowserEngine][launch_local_browser]:Set implicitly wait time to 30.0
+[2018-09-20 23:40:14,855][ERROR][Decorator][wrapper]:[UnwantedException]:
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\JetBrains\MyAutoTestFrameWork\Utils\Decorator.py", line 60, in wrapper
+    result = func(self, *args, **kwargs)
+  File "D:\Program Files (x86)\JetBrains\MyAutoTestFrameWork\Src\Browser.py", line 100, in navigate_to
+    self.driver.get(url)
+AttributeError: 'NoneType' object has no attribute 'get'
+[2018-09-20 23:40:14,858][INFO][BrowserEngine][quit_browser]:Quit browser and release current driver
