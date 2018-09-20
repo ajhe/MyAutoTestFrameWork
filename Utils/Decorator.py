@@ -201,11 +201,10 @@ def my_testcase(func, screen_shot = SCREENSHOT_SWICTH, rerun=RERUN_SWICTH):
                 testLogger.info('[TestSuccess]: {0} >> {1}'.format(_testclass_name, _testcase_name))
                 return result
             except Exception:
-                if screen_shot:
+                rerun_time -= 1
+                if screen_shot and rerun_time == 0 :
                     _filename = 'Error' + _testcase_name
                     _browser.take_screenshot(_filename)
-                rerun_time -= 1
-                if rerun_time == 0:
                     exc_type, exc_msg, _ = sys.exc_info()
                     testLogger.info(' TestResult: '.center(80, '-'))
                     testLogger.error('[TestFail]: {0} >> {1}'.format(exc_type.__name__, exc_msg))

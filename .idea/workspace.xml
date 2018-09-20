@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88c4561b-e0ac-4936-abb6-f31e1ecba1c4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/Logs/2018-09-19-23-43-38.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/Logs/2018-09-19-23-46-48.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/Logs/2018-09-20-00-01-58.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/Screenshots/20180919234422_Errortest_articles_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/Screenshots/20180920000244_Errortest_articles_title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/Screenshots/20180920115115_Errortest_articles_title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Results/Screenshots/20180920115143_Errortest_articles_title.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config/FrameConfig.ini" afterPath="$PROJECT_DIR$/Config/FrameConfig.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" afterPath="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestSuite/geckodriver.log" afterPath="$PROJECT_DIR$/TestSuite/geckodriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/Decorator.py" afterPath="$PROJECT_DIR$/Utils/Decorator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/ParseConfig.py" afterPath="$PROJECT_DIR$/Utils/ParseConfig.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,43 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Decorator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/Decorator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-485">
-              <caret line="180" column="35" lean-forward="true" selection-start-line="180" selection-start-column="35" selection-end-line="180" selection-end-column="35" />
-              <folding>
-                <element signature="e#16#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrameConfig.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/FrameConfig.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Browser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Src/Browser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="228" column="15" lean-forward="false" selection-start-line="228" selection-start-column="15" selection-end-line="228" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Test_SubPageTile.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestSuite/Test_SubPageTile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="1419">
+              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="e#16#56#0" expanded="true" />
               </folding>
@@ -105,8 +68,8 @@
         <option value="$PROJECT_DIR$/Src/PUnittest.py" />
         <option value="$PROJECT_DIR$/Utils/ParseConfig.py" />
         <option value="$PROJECT_DIR$/Config/FrameConfig.ini" />
-        <option value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
         <option value="$PROJECT_DIR$/Utils/Decorator.py" />
+        <option value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
       </list>
     </option>
   </component>
@@ -153,6 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,6 +181,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyAutoTestFrameWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyAutoTestFrameWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Screenshots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyAutoTestFrameWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyAutoTestFrameWork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Results" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -237,80 +233,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in TestSubPageTitle (3)">
-    <configuration default="false" name="Unittest TestSubPageTitle.test_articles_title" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestSuite" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MyAutoTestFrameWork" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
-      <option name="CLASS_NAME" value="TestSubPageTitle" />
-      <option name="METHOD_NAME" value="test_articles_title" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in Test_SubPageTile" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestSuite" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MyAutoTestFrameWork" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in TestSubPageTitle" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestSuite" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MyAutoTestFrameWork" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
-      <option name="CLASS_NAME" value="TestSubPageTitle" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in TestSubPageTitle (2)">
     <configuration default="false" name="Unittests in TestSubPageTitle (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,6 +277,72 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestSubPageTitle.test_formus_title" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestSuite" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MyAutoTestFrameWork" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
+      <option name="CLASS_NAME" value="TestSubPageTitle" />
+      <option name="METHOD_NAME" value="test_formus_title" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestSubPageTitle.test_training_title" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestSuite" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MyAutoTestFrameWork" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
+      <option name="CLASS_NAME" value="TestSubPageTitle" />
+      <option name="METHOD_NAME" value="test_training_title" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest TestSubPageTitle.test_projects_title" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestSuite" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MyAutoTestFrameWork" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestSuite/Test_SubPageTile.py" />
+      <option name="CLASS_NAME" value="TestSubPageTitle" />
+      <option name="METHOD_NAME" value="test_projects_title" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -490,19 +485,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_articles_title" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Test_SubPageTile" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (3)" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (2)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (3)" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_formus_title" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_training_title" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_projects_title" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Test_SubPageTile" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_articles_title" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_projects_title" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_training_title" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest TestSubPageTitle.test_formus_title" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in TestSubPageTitle (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -523,26 +518,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_TestSubPageTitle - 2018.09.20 at 09h 54m 19s.xml">
-      <configuration name="Unittests in TestSubPageTitle" configurationId="tests" />
+    <history-entry file="Unittest_TestSubPageTitle_test_formus_title - 2018.09.20 at 15h 27m 04s.xml">
+      <configuration name="Unittest TestSubPageTitle.test_formus_title" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestSubPageTitle_(1) - 2018.09.19 at 23h 59m 06s.xml">
-      <configuration name="Unittests in TestSubPageTitle (1)" configurationId="tests" />
+    <history-entry file="Unittest_TestSubPageTitle_test_projects_title - 2018.09.20 at 15h 34m 25s.xml">
+      <configuration name="Unittest TestSubPageTitle.test_projects_title" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestSubPageTitle_(2) - 2018.09.20 at 11h 36m 48s.xml">
+    <history-entry file="Unittest_TestSubPageTitle_test_training_title - 2018.09.20 at 15h 28m 04s.xml">
+      <configuration name="Unittest TestSubPageTitle.test_training_title" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittest_TestSubPageTitle_test_training_title - 2018.09.20 at 15h 32m 40s.xml">
+      <configuration name="Unittest TestSubPageTitle.test_training_title" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_TestSubPageTitle_(2) - 2018.09.20 at 15h 37m 25s.xml">
       <configuration name="Unittests in TestSubPageTitle (2)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestSubPageTitle_(3) - 2018.09.20 at 11h 46m 12s.xml">
-      <configuration name="Unittests in TestSubPageTitle (3)" configurationId="tests" />
+    <history-entry file="Unittests_in_TestSubPageTitle_(2) - 2018.09.20 at 15h 40m 36s.xml">
+      <configuration name="Unittests in TestSubPageTitle (2)" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_TestSubPageTitle_(3) - 2018.09.20 at 11h 50m 11s.xml">
-      <configuration name="Unittests in TestSubPageTitle (3)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_TestSubPageTitle_(3) - 2018.09.20 at 11h 51m 44s.xml">
-      <configuration name="Unittests in TestSubPageTitle (3)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_Test_SubPageTile - 2018.09.19 at 23h 44m 23s.xml">
-      <configuration name="Unittests in Test_SubPageTile" configurationId="tests" />
+    <history-entry file="Unittests_in_TestSubPageTitle_(2) - 2018.09.20 at 15h 45m 15s.xml">
+      <configuration name="Unittests in TestSubPageTitle (2)" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_Test_SubPageTile - 2018.09.19 at 23h 58m 15s.xml">
       <configuration name="Unittests in Test_SubPageTile" configurationId="tests" />
@@ -564,10 +559,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -609,16 +604,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/1494736245/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="4543" column="8" lean-forward="false" selection-start-line="4543" selection-start-column="8" selection-end-line="4543" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/Logs/2018-09-13-15-47-02.log" />
-    <entry file="file://$PROJECT_DIR$/Results/Logs/2018-09-13-15-46-48.log" />
     <entry file="file://$PROJECT_DIR$/Results/Logs/2018-09-15-16-31-02.log" />
     <entry file="file://$PROJECT_DIR$/Utils/geckodriver.log" />
     <entry file="file://$PROJECT_DIR$/Src/geckodriver.log" />
@@ -717,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sample/Pom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Page/HomePage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -734,29 +712,10 @@
     <entry file="file://$PROJECT_DIR$/Results/Logs/2018-09-19-23-38-10.log" />
     <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180919234104_Errortest_articles_title.png" />
     <entry file="file://$PROJECT_DIR$/Results/Logs/2018-09-19-23-40-18.log" />
-    <entry file="file://$PROJECT_DIR$/Results/Logs/2018-09-19-23-43-38.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180920000244_Errortest_articles_title.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180919234422_Errortest_articles_title.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180920095418_Errortest_articles_title.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Logs/2018-09-19-23-43-38.log" />
+    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180920000244_Errortest_articles_title.png" />
+    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180919234422_Errortest_articles_title.png" />
+    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180920095418_Errortest_articles_title.png" />
     <entry file="file://$PROJECT_DIR$/Utils/ParseLocator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -771,9 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="57" />
-          <folding>
-            <element signature="e#16#57#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,6 +743,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Config/FrameConfig.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample/Pom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180920153409_Errortest_projects_title.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Src/Browser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -797,26 +774,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/Decorator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-485">
-          <caret line="180" column="35" lean-forward="true" selection-start-line="180" selection-start-column="35" selection-end-line="180" selection-end-column="35" />
+        <state relative-caret-position="861">
+          <caret line="205" column="44" lean-forward="true" selection-start-line="205" selection-start-column="44" selection-end-line="205" selection-end-column="44" />
           <folding>
             <element signature="e#16#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Config/FrameConfig.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="11" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180920154023_Errortest_projects_title.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Screenshots/20180920153722_Errortest_training_title.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestSuite/Test_SubPageTile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="1419">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="e#16#56#0" expanded="true" />
           </folding>

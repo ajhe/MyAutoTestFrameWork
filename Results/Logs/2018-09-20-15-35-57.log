@@ -1,0 +1,114 @@
+[2018-09-20 15:36:57,753][DEBUG][Decorator][wrapper]:[Call]: Browser >> navigate_to
+[2018-09-20 15:36:57,753][INFO][Test_SubPageTile][setUp]:****************************************test_articles_title*****************************************
+[2018-09-20 15:36:57,753][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:36:57,822][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:36:57,842][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:36:57,878][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:36:58,108][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.articles_button
+[2018-09-20 15:37:00,312][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:00,513][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Articles
+[2018-09-20 15:37:00,513][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Software Testing Articles', 'Software Testing Articles')
+[2018-09-20 15:37:00,513][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:37:00,513][INFO][Decorator][wrapper]:[TestSuccess]: TestSubPageTitle >> test_articles_title
+[2018-09-20 15:37:00,513][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-20 15:37:00,513][INFO][Test_SubPageTile][setUp]:*****************************************test_formus_title******************************************
+[2018-09-20 15:37:00,513][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:37:00,703][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:00,742][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:00,946][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:01,348][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.forums_button
+[2018-09-20 15:37:03,809][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:03,841][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Forums
+[2018-09-20 15:37:03,841][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Software Testing Forums', 'Software Testing Forums')
+[2018-09-20 15:37:03,841][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:37:03,841][INFO][Decorator][wrapper]:[TestSuccess]: TestSubPageTitle >> test_formus_title
+[2018-09-20 15:37:03,841][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-20 15:37:03,841][INFO][Test_SubPageTile][setUp]:****************************************test_projects_title*****************************************
+[2018-09-20 15:37:03,842][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:37:03,869][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:03,891][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:03,938][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:04,219][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:37:06,290][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:06,454][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Project Board
+[2018-09-20 15:37:06,454][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Project Board', 'xxxxxxxxxxx')
+[2018-09-20 15:37:06,677][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:37:06,677][INFO][Decorator][wrapper]:--------------------------------TestRun 2 times---------------------------------
+[2018-09-20 15:37:06,766][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:06,813][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:06,911][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:07,183][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:37:09,265][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:09,298][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Project Board
+[2018-09-20 15:37:09,298][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Project Board', 'xxxxxxxxxxx')
+[2018-09-20 15:37:09,460][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:37:09,460][INFO][Decorator][wrapper]:--------------------------------TestRun 3 times---------------------------------
+[2018-09-20 15:37:09,483][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:09,500][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:09,538][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:09,765][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:37:11,819][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:11,857][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Project Board
+[2018-09-20 15:37:11,858][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Project Board', 'xxxxxxxxxxx')
+[2018-09-20 15:37:12,042][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:37:12,042][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:37:12,042][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> u'Project Board' != 'xxxxxxxxxxx'
+[2018-09-20 15:37:12,043][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-20 15:37:12,045][INFO][Test_SubPageTile][setUp]:******************************************test_tools_title******************************************
+[2018-09-20 15:37:12,045][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:37:12,082][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:12,119][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:12,180][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:12,417][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.tools_button
+[2018-09-20 15:37:14,571][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:14,596][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Tool Reviews
+[2018-09-20 15:37:14,596][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Software Testing Tool Reviews', 'uxuxuxuxuxuxu')
+[2018-09-20 15:37:14,690][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:37:14,690][INFO][Decorator][wrapper]:--------------------------------TestRun 2 times---------------------------------
+[2018-09-20 15:37:14,723][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:14,744][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:14,793][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:15,038][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.tools_button
+[2018-09-20 15:37:17,092][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:17,115][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Tool Reviews
+[2018-09-20 15:37:17,115][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Software Testing Tool Reviews', 'uxuxuxuxuxuxu')
+[2018-09-20 15:37:17,234][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:37:17,234][INFO][Decorator][wrapper]:--------------------------------TestRun 3 times---------------------------------
+[2018-09-20 15:37:17,259][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:17,275][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:17,312][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:17,546][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.tools_button
+[2018-09-20 15:37:19,572][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:19,591][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Tool Reviews
+[2018-09-20 15:37:19,591][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Software Testing Tool Reviews', 'uxuxuxuxuxuxu')
+[2018-09-20 15:37:19,710][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:37:19,710][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:37:19,710][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> u'Software Testing Tool Reviews' != 'uxuxuxuxuxuxu'
+[2018-09-20 15:37:19,711][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-20 15:37:19,711][INFO][Test_SubPageTile][setUp]:****************************************test_training_title*****************************************
+[2018-09-20 15:37:19,711][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:37:19,730][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:19,744][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:19,773][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:20,007][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.training_button
+[2018-09-20 15:37:22,142][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:22,174][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Courses
+[2018-09-20 15:37:22,174][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Software Testing Courses', 'Software Testing Courses')
+[2018-09-20 15:37:22,273][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:37:22,273][INFO][Decorator][wrapper]:--------------------------------TestRun 2 times---------------------------------
+[2018-09-20 15:37:22,296][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:22,315][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:37:22,348][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:37:22,622][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.training_button
+[2018-09-20 15:37:24,697][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:37:24,719][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Software Testing Courses
+[2018-09-20 15:37:24,719][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Software Testing Courses', 'Software Testing Courses')
+[2018-09-20 15:37:24,719][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:37:24,719][INFO][Decorator][wrapper]:[TestSuccess]: TestSubPageTitle >> test_training_title
+[2018-09-20 15:37:24,719][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-20 15:37:25,214][DEBUG][Decorator][wrapper]:[Call]: Browser >> quit

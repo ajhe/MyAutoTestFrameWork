@@ -1,0 +1,9 @@
+[2018-09-20 15:26:59,174][WARNING][Decorator][wrapper]:[WebDriverException]: Message: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.utest.com1/&c=UTF-8&f=regular&d=Firefox%20%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0%E5%9C%A8%20www.utest.com1%20%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%82
+[2018-09-20 15:26:59,176][INFO][Test_SubPageTile][setUp]:*****************************************test_formus_title******************************************
+[2018-09-20 15:26:59,176][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:27:03,687][ERROR][Decorator][wrapper]:[WebDriverException]: Message: Failed to decode response from marionette
+[2018-09-20 15:27:03,687][WARNING][Decorator][wrapper]:[WebDriverException]: Message: Failed to decode response from marionette
+[2018-09-20 15:27:03,703][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:27:03,703][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:27:03,717][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:27:03,717][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection

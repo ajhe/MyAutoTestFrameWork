@@ -1,0 +1,34 @@
+[2018-09-20 15:34:01,681][DEBUG][Decorator][wrapper]:[Call]: Browser >> navigate_to
+[2018-09-20 15:34:01,683][INFO][Test_SubPageTile][setUp]:****************************************test_projects_title*****************************************
+[2018-09-20 15:34:01,683][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:34:01,740][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:34:01,759][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:34:01,796][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:34:02,026][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:34:09,151][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'section-title') visible
+[2018-09-20 15:34:09,171][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .section-title
+[2018-09-20 15:34:09,171][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'xxxxxxxxxxx')
+[2018-09-20 15:34:09,407][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:34:09,407][INFO][Decorator][wrapper]:--------------------------------TestRun 2 times---------------------------------
+[2018-09-20 15:34:09,427][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:34:09,443][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:34:09,470][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:34:09,706][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:34:16,815][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'section-title') visible
+[2018-09-20 15:34:16,835][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .section-title
+[2018-09-20 15:34:16,835][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'xxxxxxxxxxx')
+[2018-09-20 15:34:17,082][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:34:17,084][INFO][Decorator][wrapper]:--------------------------------TestRun 3 times---------------------------------
+[2018-09-20 15:34:17,098][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:34:17,112][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:34:17,138][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:34:17,365][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:34:24,451][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'section-title') visible
+[2018-09-20 15:34:24,461][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .section-title
+[2018-09-20 15:34:24,461][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'xxxxxxxxxxx')
+[2018-09-20 15:34:24,717][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:34:24,717][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:34:24,717][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> None != 'xxxxxxxxxxx'
+[2018-09-20 15:34:24,717][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-20 15:34:24,957][DEBUG][Decorator][wrapper]:[Call]: Browser >> quit

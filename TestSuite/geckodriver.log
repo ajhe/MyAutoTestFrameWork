@@ -1,11 +1,15 @@
-1537415412670	geckodriver	INFO	geckodriver 0.19.1
-1537415412678	geckodriver	INFO	Listening on 127.0.0.1:56617
-1537415413223	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.zshMPxuu8JKc"
-1537415419343	Marionette	INFO	Listening on port 56624
-1537415420139	Marionette	WARN	TLS certificate errors will be ignored for this session
-1537415503766	Marionette	INFO	New connections will no longer be accepted
-ne 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
-JavaScript error: resource://gre/components/nsUrlClassifierListManager.js, line 287: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
-1537372843927	Marionette	INFO	Ceased listening
-87: NS_ERROR_NOT_INITIALIZED: Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIUrlClassifierDBService.getTables]
-1537372810765	Marionette	INFO	Ceased listening
+1537429458671	geckodriver	INFO	geckodriver 0.19.1
+1537429458679	geckodriver	INFO	Listening on 127.0.0.1:56974
+1537429459197	mozrunner::runner	INFO	Running command: "D:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.pGEc5nEfpaQc"
+1537429472246	Marionette	INFO	Listening on port 56980
+1537429472526	Marionette	WARN	TLS certificate errors will be ignored for this session
+1537429508716	Marionette	INFO	New connections will no longer be accepted
+ transaction.
+  Stack:
+    executeTransaction/promise</transactionPromise<@resource://gre/modules/Sqlite.jsm:617:19
+TaskImpl_run@resource://gre/modules/Task.jsm:319:42
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+observe@resource://gre/modules/AsyncShutdown.jsm:550:9
+addBlocker/moduleBlocker/<@resource://gre/components/nsAsyncShutdown.j

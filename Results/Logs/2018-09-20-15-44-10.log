@@ -1,0 +1,70 @@
+[2018-09-20 15:45:01,165][DEBUG][Decorator][wrapper]:[Call]: Browser >> navigate_to
+[2018-09-20 15:45:01,167][INFO][Test_SubPageTile][setUp]:******************* TestSubPageTitle >> test_projects_title ********************
+[2018-09-20 15:45:01,167][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:45:01,252][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:45:01,309][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:45:01,361][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:45:01,637][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:45:03,881][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:45:03,898][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Project Board
+[2018-09-20 15:45:03,898][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Project Board', 'xxxxxxxxxxx')
+[2018-09-20 15:45:03,898][INFO][Decorator][wrapper]:--------------------------------TestRun 2 times---------------------------------
+[2018-09-20 15:45:03,914][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:45:03,930][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:45:03,960][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:45:04,184][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:45:06,237][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:45:06,256][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Project Board
+[2018-09-20 15:45:06,256][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Project Board', 'xxxxxxxxxxx')
+[2018-09-20 15:45:06,256][INFO][Decorator][wrapper]:--------------------------------TestRun 3 times---------------------------------
+[2018-09-20 15:45:06,273][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:45:06,286][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: True
+[2018-09-20 15:45:06,312][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_clickable [Return]: True
+[2018-09-20 15:45:06,539][DEBUG][Decorator][wrapper]:[Call]: Element >> click >> NavigateBar.projects_button
+[2018-09-20 15:45:08,588][DEBUG][Decorator][wrapper]:[Call]: Wait >> element_visible [Return]: True
+[2018-09-20 15:45:08,607][DEBUG][Decorator][wrapper]:[Call]: Element >> get_text >> HomePage.title_label [Return]: Project Board
+[2018-09-20 15:45:08,607][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (u'Project Board', 'xxxxxxxxxxx')
+[2018-09-20 15:45:08,711][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 15:45:08,713][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:45:08,713][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> u'Project Board' != 'xxxxxxxxxxx'
+[2018-09-20 15:45:08,713][INFO][Test_SubPageTile][tearDown]:--------------------------------------------------------------------------------
+
+[2018-09-20 15:45:08,966][DEBUG][Decorator][wrapper]:[Call]: Browser >> quit
+[2018-09-20 15:45:09,020][WARNING][Decorator][wrapper]:[WebDriverException]: Message: Failed to decode response from marionette
+[2018-09-20 15:45:09,020][INFO][Test_SubPageTile][setUp]:********************* TestSubPageTitle >> test_tools_title *********************
+[2018-09-20 15:45:09,020][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 15:45:09,028][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:09,028][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:09,032][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:09,032][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:09,038][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:09,038][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,055][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,056][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,056][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uxuxuxuxuxuxu')
+[2018-09-20 15:45:11,058][INFO][Decorator][wrapper]:--------------------------------TestRun 2 times---------------------------------
+[2018-09-20 15:45:11,071][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,072][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,082][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,082][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,092][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:11,092][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,111][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,111][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,112][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uxuxuxuxuxuxu')
+[2018-09-20 15:45:13,112][INFO][Decorator][wrapper]:--------------------------------TestRun 3 times---------------------------------
+[2018-09-20 15:45:13,131][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,131][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,141][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,141][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,150][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:13,150][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:15,167][ERROR][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:15,168][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:15,168][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uxuxuxuxuxuxu')
+[2018-09-20 15:45:15,178][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
+[2018-09-20 15:45:15,178][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 15:45:15,178][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> None != 'uxuxuxuxuxuxu'
+[2018-09-20 15:45:15,180][INFO][Test_SubPageTile][tearDown]:--------------------------------------------------------------------------------
+
+[2018-09-20 15:45:15,191][WARNING][Decorator][wrapper]:[SessionNotCreatedException]: Message: Tried to run command without establishing a connection
