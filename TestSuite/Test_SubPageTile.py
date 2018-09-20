@@ -11,7 +11,6 @@ from Utils.ParseConfig import parseConfig
 import time
 
 SCREENSHOT_SWICTH = parseConfig.screenshot_config('ScreenShotSwitch')
-# print SCREENSHOT_SWICTH
 
 class TestSubPageTitle(PUnittest):
 

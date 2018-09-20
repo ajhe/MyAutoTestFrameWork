@@ -1,0 +1,49 @@
+[2018-09-20 11:50:20,427][WARNING][Decorator][wrapper]:[WebDriverException]: Message: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.utest.com1/&c=UTF-8&f=regular&d=Firefox%20%E6%97%A0%E6%B3%95%E6%89%BE%E5%88%B0%E5%9C%A8%20www.utest.com1%20%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%82
+[2018-09-20 11:50:20,430][INFO][Test_SubPageTile][setUp]:****************************************test_articles_title*****************************************
+[2018-09-20 11:50:20,430][INFO][Decorator][wrapper]:--------------------------------TestRun 1 times---------------------------------
+[2018-09-20 11:50:25,575][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'css selector', u'.nav-menu-open') visible
+[2018-09-20 11:50:25,582][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: False
+[2018-09-20 11:50:30,661][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'hamburger') clickable
+[2018-09-20 11:50:30,681][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .hamburger
+[2018-09-20 11:50:35,815][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") visible
+[2018-09-20 11:50:35,838][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-20 11:50:35,838][DEBUG][Decorator][wrapper]:[Assert]: assertTrue >> (False,)
+[2018-09-20 11:50:40,983][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") clickable
+[2018-09-20 11:50:41,005][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-20 11:50:48,151][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'section-title') visible
+[2018-09-20 11:50:48,178][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .section-title
+[2018-09-20 11:50:48,180][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uuuuuu')
+[2018-09-20 11:50:48,255][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 11:50:48,256][INFO][Decorator][wrapper]:--------------------------------TestRun 2 times---------------------------------
+[2018-09-20 11:50:53,358][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'css selector', u'.nav-menu-open') visible
+[2018-09-20 11:50:53,387][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: False
+[2018-09-20 11:50:58,516][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'hamburger') clickable
+[2018-09-20 11:50:58,540][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .hamburger
+[2018-09-20 11:51:03,661][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") visible
+[2018-09-20 11:51:03,697][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-20 11:51:03,697][DEBUG][Decorator][wrapper]:[Assert]: assertTrue >> (False,)
+[2018-09-20 11:51:08,805][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") clickable
+[2018-09-20 11:51:08,831][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-20 11:51:15,944][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'section-title') visible
+[2018-09-20 11:51:15,963][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .section-title
+[2018-09-20 11:51:15,964][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uuuuuu')
+[2018-09-20 11:51:16,032][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 11:51:16,032][INFO][Decorator][wrapper]:--------------------------------TestRun 3 times---------------------------------
+[2018-09-20 11:51:21,119][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'css selector', u'.nav-menu-open') visible
+[2018-09-20 11:51:21,142][DEBUG][Decorator][wrapper]:[Call]: Element >> is_displayed >> NavigateBar.navigate_bar [Return]: False
+[2018-09-20 11:51:26,253][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'hamburger') clickable
+[2018-09-20 11:51:26,273][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .hamburger
+[2018-09-20 11:51:31,362][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") visible
+[2018-09-20 11:51:31,387][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-20 11:51:31,388][DEBUG][Decorator][wrapper]:[Assert]: assertTrue >> (False,)
+[2018-09-20 11:51:36,496][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'xpath', u"//a[@ui-sref='article']") clickable
+[2018-09-20 11:51:36,526][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: //a[@ui-sref='article']
+[2018-09-20 11:51:43,664][WARNING][Decorator][wrapper]:[TimeoutException]: Message: Wait element (u'class name', u'section-title') visible
+[2018-09-20 11:51:43,698][WARNING][Decorator][wrapper]:[NoSuchElementException]: Message: Unable to locate element: .section-title
+[2018-09-20 11:51:43,700][DEBUG][Decorator][wrapper]:[Assert]: assertEqual >> (None, 'uuuuuu')
+[2018-09-20 11:51:43,760][DEBUG][Decorator][wrapper]:[Call]: Browser >> take_screenshot
+[2018-09-20 11:51:43,762][INFO][Decorator][wrapper]:--------------------------------- TestResult: ----------------------------------
+[2018-09-20 11:51:43,762][ERROR][Decorator][wrapper]:[TestFail]: AssertionError >> False is not true, AssertionError: None != 'uuuuuu'
+[2018-09-20 11:51:43,763][INFO][Test_SubPageTile][tearDown]:****************************************************************************************************
+
+[2018-09-20 11:51:43,971][DEBUG][Decorator][wrapper]:[Call]: Browser >> quit

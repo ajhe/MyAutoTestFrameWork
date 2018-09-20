@@ -7,6 +7,8 @@ from selenium.common.exceptions import TimeoutException
 import sys
 
 SCREENSHOT_SWICTH = parseConfig.screenshot_config('ScreenShotSwitch')
+RERUN_SWICTH = parseConfig.rerun_config('ReRunSwitch')
+RERUN_TIME = parseConfig.rerun_config('ReRunTime')
 
 def logger_callar(cls):
     """装饰类，添加日志，记录的调用方法"""
@@ -167,27 +169,47 @@ def my_unittest_assertion(func):
             self.Exc_Stack.append(e)
     return wrapper
 
-def my_testcase(func, screen_shot = SCREENSHOT_SWICTH):
+def my_testcase(func, screen_shot = SCREENSHOT_SWICTH, rerun=RERUN_SWICTH):
     def wrapper(self, *args, **kwargs):
+        if rerun is False:
+            rerun_time = 1
+        elif rerun is True:
+            rerun_time = RERUN_TIME
+        elif isinstance(rerun, int):                                   # 这里是因为isinstance(True, int)也为真，所以分开判断
+            rerun_time = rerun
+        else:
+            rerun_time = RERUN_TIME
         _testcase_name = self._testMethodName
         _testclass_name = self.__class__.__name__
+
+        # _browser是获取测试用例实例browser属性，因为跨越了多个页面类属性层，因此用到循环
         _browser = None
         for attr in dir(self):
             if hasattr(getattr(self, attr), 'browser'):
                 _browser = getattr(getattr(self, attr), 'browser')
                 break
-        try:
-            result = func(self, *args, **kwargs)
-            self.raise_exc()
-            testLogger.info('[TestSuccess]: {0} >> {1}'.format(_testclass_name, _testcase_name))
-            return result
-        except Exception:
-            if screen_shot:
-                _filename = 'Error' + _testcase_name
-                _browser.take_screenshot(_filename)
-            exc_type,exc_msg,_ = sys.exc_info()
-            testLogger.error('[TestFail]: {0} >> {1}'.format(exc_type.__name__, exc_msg))
-            raise
+
+        # 循环执行用例
+        _rerun_time = rerun_time
+        while rerun_time > 0:
+            try:
+                testLogger.info(('TestRun {0} times'.format(_rerun_time - rerun_time + 1)).center(80,'-'))
+                result = func(self, *args, **kwargs)
+                # 执行完用例后，调用PUintest中的raise_exc()函数抛出所有异常
+                self.raise_exc()
+                testLogger.info(' TestResult: '.center(80, '-'))
+                testLogger.info('[TestSuccess]: {0} >> {1}'.format(_testclass_name, _testcase_name))
+                return result
+            except Exception:
+                if screen_shot:
+                    _filename = 'Error' + _testcase_name
+                    _browser.take_screenshot(_filename)
+                rerun_time -= 1
+                if rerun_time == 0:
+                    exc_type, exc_msg, _ = sys.exc_info()
+                    testLogger.info(' TestResult: '.center(80, '-'))
+                    testLogger.error('[TestFail]: {0} >> {1}'.format(exc_type.__name__, exc_msg))
+                    raise
     return wrapper
 
 

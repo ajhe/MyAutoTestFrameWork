@@ -33,7 +33,20 @@ class ParseConfig(object):
                 return False
         except Exception as e:
             testLogger.exception('[Exception]:', exc_info=True)
-            raise
+            raise e
+
+    def rerun_config(self, setting_name):
+        try:
+            result = self.config.get('ReRunConfig', setting_name)
+            if result == 'False':
+                return False
+            elif result.isdigit():
+                return int(result)
+            else:
+                return True
+        except Exception as e:
+            testLogger.exception('[Exception]:', exc_info=True)
+            raise e
 
 
 
