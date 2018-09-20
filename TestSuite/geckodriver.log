@@ -12,4 +12,13 @@ process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-bac
 walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
 scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
 observe@resource://gre/modules/AsyncShutdown.jsm:550:9
-addBlocker/moduleBlocker/<@resource://gre/components/nsAsyncShutdown.j
+addBlocker/moduleBlocker/<@resource://gre/components/nsAsyncShutdown.js:157:15
+Promise@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:390:5
+moduleBlocker@resource://gre/components/nsAsyncShutdown.js:153:29
+trigger@resource://gre/modules/AsyncShutdown.jsm:719:23
+_wait@resource://gre/modules/AsyncShutdown.jsm:866:7
+wait@resource://gre/modules/AsyncShutdown.jsm:850:28
+observe@resource://gre/modules/AsyncShutdown.jsm:533:17
+
+1537429476890	Marionette	INFO	Ceased listening
+1537429508969	geckodriver::marionette	ERROR	Failed to kill browser process
